@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1> <hr>
+    <h2>Links externos</h2>
+        <p>Quando falamos de links existe uma maneira correta de colocalos,<br><strong>Com tag &lt;a&gt;</strong> <br>Observe:</p>
+    <ul type="square">
+        <li>
+            <p>Entre no meu <a href="https://www.youtube.com/@symood">canal do youtube</a></p>
+        </li>
+        <!-- Lembrando que estamos falando de URL, com os parâmetros target - Onde mandar o cliente, e o rel - Qual a 'categoria daquela URL' -->
+        <li>
+            <p>Veja mais sobre <a href="https://pt.wikipedia.org/wiki/Velociraptor" target="_blank" rel="external">velociraptors</a></p>
+        </li>
+    </ul>
+    <h2>Links internos</h2>
+    <p>Também é possível colocar links internos, a relação de tag é a mesma, <br>O que muda de verdade são os <em>parâmetros</em><br>Porém é necessário criar uma página antes de colocar a mão na massa, <br><strong>Basta manipular no seu <em>"ex"</em>, e criar um novo arquivo, que faça sentido por favor</strong> &#x1F64F;</p>
+    <p>Vá para a nossa <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <!-- Lembrando que os favicons não herdam de uma pasta para outra -->
+    <p><strong><em>Lembrando que uma recomendação do GUANABARA, foi estudar LINUX</em></strong></p>
+    <p>Lembrando que os parametros <em>rel</em> e <em>target</em>, <br>Não mudam em nada (o target muda, porque ele decide se vai abrir ou não outra guia) a experiência do cliente,<br> mas sim a <strong>operação do sistema de busca do google</strong></p>
+    <p>Observe a importância do ../ e do ./</p>
+    <p><a href="./conteudos/pag003.html">Clique aqui para acessar nossa aba de conteúdos</a></p>
+    <!-- ./ - Ir para dentro de uma pasta, ../ - Voltar para uma pasta anterior -->
+    <h3>Links de propaganda/não relacionados</h3>
+    <p>Quando queremos que um mecanismo de busca evite de usar o link de um patrocínio/notícia falsa na hora de escolher um site, temos que escolher o rel="nofollow",<br>Para indicar para o mecanismo que aquele link não tem relação com o que foi escrito <br>Veja:</p>
+    <p>Observe o nosso patrocinador <a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="nofollow">guanabara</a>!!!</p> <!--Lembre de colocar o protocolo do site-->
+    <hr> <p>Também é possível colocar links em imagens</p>
+    <a href="https://github.com/gustavoguanabara/html-css" rel="nofollow" target="_blank"><img src="guanabara-face.png" alt="Cara do guanabara"></a>
+    <!-- Podemos colocar links em imagens, desde que envolepemos ela com o <a> -->
+        <h2>Links de Downloads</h2>
+        <p>Links de downloads são muito simples, basta você colocar 2 parâmetros diferentes, o <strong>download="" e o type=""</strong><br>O primeiro representa o nome do arquivo, e o segundo representa o tipo de mídia do arquivo para o navegador <br>Lembrando que o <em>href</em> trabalha com a localização do arquivo na pasta do servidor <br><ins>Observe:</ins></p>
+        <ul>
+            <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf" target="_blank">Download do meu livro</a></li> <!-- O Google não faz download automaticamente e tira da página, o target foi de teste(O zip ele baixa direto) -->
+            <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Arquivo ZIP do meu livro</a></li>
+        </ul>
+        
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: #bac1ff;
+}
+
+h1 {
+    color: #232C81;
+}
+/*Vamos mudar o id principal*/
+#principal {
+    background-color: #232C81;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #3544C5;
+    /* ID's mudam só um elemento na página
+        Os class's mudam vários elementos em uma página
+        olhe ai
+    */
+}
+
+.basico { /*Identificamos classes por .*/
+    color: #3544C5;
+}
+
+.intermediario {
+    color: #35c535;
+}
+
+.avancado {
+    color: #c5357d;
+}
+
+.destaque {
+    background-color: white;
+    /* é assim que funciona as classes basicamente */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML 5</title>
+    <style>
+        body{
+            background-color: rgb(193, 250, 181);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Mídias</h1> <hr>
+    <h2>Imagens dinâmicas</h2>
+    <p>Quando fazemos imagens dinâmicas, precisamos de duas tags importantes,<br> a tag &lt;picture&gt;(que vai englobar tudo) <br>E a tag &lt;source&gt;, que permite diversas imagens em cima de uma base &#x1F913;</p>
+    <p>Observe:</p> <!--Isso aqui não vai de acordo com html5, já que não é diretamente semântico, ou seja, foi só estético, esse parágrafo <p> no caso-->
+        <picture>
+            <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png"> <!--O max width é sempre em relação ao debaixo-->
+            <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+            <img src="images/foto-g.png" alt="foto flexível"> <!--Essa imagem é a base para as outras e é sempre importante seguir uma hierarquia de tamanhos, do menor para o maior-->
+        </picture>
+        <p><strong>Lembre-se de pegar sempre os pixels</strong> <br><em>300px pegam certinho o tamanho do celular</em> <br>Veja aqui <a href="#" target="_blank" rel="external">minhas redes</a> para aprender mais</p>
+        <h2>Áudios</h2>
+        <p>Colocar áudios é uma tarefa bem simples, podemos simplesmente usar a tag &lt;audio&gt;, <br>Tanto de forma <em>Simples quanto Complexa</em> <br>Observe:</p>
+        <audio src="midia/music.mpeg" autoplay controls></audio> <!--Tem que colocar os parametros autoplay e controls, ou talvez loop se preferir-->
+        <p><strong>Lembrando que dessa forma o site está baixando o arquivo completamente antes mesmo de tocá-lo</strong> <br>Para mudar isso, ou colocar diferente tipos de arquivo como <em>WAV, MP3</em> ou <em>OGG</em>.<br>Basta colocar a tag &lt;audio&gt; como colocamos a tag &lt;picture&gt;. <br>Observe:</p>
+        <audio preload="metadata" controls loop> <!--Dessa forma  os parametros como preload, loop, autoplay e controls vem na abertura da tag-->
+            <source src="midia/music.mpeg" type="audio/mpeg"> <!--Usar os sources diferente dos de imagem-->
+            <source src="midia/music.ogg" type="audio/ogg">
+            <source src="midia/music.wav" type="audio/wav">
+        </audio>
+        <p><ins>O preload como metadata vai carregar o áudio enquanto você ouve, lembre-se de tirar o autoplay nesses casos</ins>. <br>Funciona bem com arquivos grandes.</p>
+        <p>Infelizmente seu navegador não consegue reproduzir o arquivo.<br><a href="midia/music.mpeg" download="music.mpeg" type="audio/mpeg">Clique aqui para baixar o seu arquivo</a></p>
+</body>
+</html>

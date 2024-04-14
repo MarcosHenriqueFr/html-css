@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style> 
+        body {
+            background-color: rgb(152, 25, 184); 
+            /* Os códigos em CSS funcionam com base em seletores básicos, que aparecem na área de head do html, as anotações que eu fiz em CSS aqui, são além do conteúdo do curso, foram apenas brincadeiras*/
+            color: white;
+        }
+        h1 {
+            color: rgb(245, 241, 26);
+        }
+        h2 { 
+            color: rgb(235, 190, 45);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo a formatação do html 5</h1>
+    <h2>Negrito e Destaque</h2> 
+    <p>Existem duas maineiras de se fazer o negrito e o destaque <br>Uma maneira não semântica (N.S) e uma maneira semântica (S), veja as duas abaixo: <br> N.S: Observe o termo a seguir em <b>negrito</b>. <br> S: Observe o termo a seguir em <strong>destaque</strong>. <br>Usando respectivamente, a tag &lt;b&gt; e a tag &lt;strong&gt;</p>
+    <h2>Itálico e/ou ênfase</h2>
+    <p>Para colocarmos um texto/termo em itálico existe uma maneira N.S e uma maneira S, que estão a seguir: <br> N.S: Observe o termo a seguir em <i>itálico</i>. <br>S: Observe o termo a seguir colocado em <em>ênfase</em>. <br>Usando respectivamente a tag &lt;i&gt;, e a tag &lt;em&gt;</p>
+    <h2>Tá bom, mas qual a diferença de um para o outro?</h2>
+    <p>A diferença se resume na funcionalidade e na compatibilidade do Html5 que se foca no entendimento do significado <br>É sempre bom utilizar a forma mais atualizado da utilização do seu código</p>
+    <p><em>Uma dica é sempre utilizar o <strong>Ctrl + shift + p</strong>, para otimizar o processo</em></p>
+    <p><strong>Mantenha se atualizado sobre as informações da sua linguagem &#x261D; &#x1F913;</strong></p>
+    <h2>Texto Marcado</h2>
+    <p>Esse <mark style="background-color: coral;">texto pode ser marcado</mark> utilizando a tag MARK</p>  <!-- O CSS, pode ser utilizado tanto na parte do body, quanto na parte da head, quando escrito eno body, ele herda somente a característica de um específico --> 
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Olha só a variação com a tag <big>BIG</big> e com a tag <small>small</small> </p>
+    <h2>Texto deletado</h2>
+    <p>Um texto lido mas não considerado, é indicado com a tag del, para mostrar que <del>algo foi 'desconsiderado'</del></p>
+    <h2>Texto inserido/sublinhado</h2>
+    <p>Indicar que algo foi adicionado depois <br>Existem duas tags possíveis, uma N.S e uma S, que são as seguintes: <br> N.S: tag u, onde vai mostrar <u>um texto sublinhado</u> <br> E a tag ins, que vai indicar que algo foi <ins>inserido depois</ins></p>
+    <h2>As duas tags seguintes são na maioria das vezes usados para representar expressões algébricas ou fórmulas químicas.</h2>
+    <p>Como por exemplo: x7 + 53, ou C2H4 <br>É possível perceber que não fez sentido por que não está <ins>sobrescrito</ins> e nem <ins>subscrito</ins>, para isso usamos as tags &lt;sup&gt; e a tag &lt;sub&gt;. <br>Resultando nas seguintes expressões: <br> x<sup>7</sup> + 5<sup>3</sup> <br>C<sub>2</sub>H<sub>4</sub></p>
+</body>
+</html>

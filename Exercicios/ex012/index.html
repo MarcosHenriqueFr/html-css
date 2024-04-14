@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias 2</title>
+    <style>
+        video{
+            width: 560px;
+            height: 315px;
+        }
+        body{
+            background-color: rgb(194, 156, 156);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Vídeos</h1> <hr>
+    <h2>Vídeos locais</h2>
+    <p>Bom, até agora já vimos como imagens dinâmicas e áudios funcionam. <br>Agora, vamos ver como funcionam os vídeos. Basta utilizar a tag &lt;video&gt;. &#x1F913; <br>A partir de agora vamos usar somente a versão complexa, <br><em>sem levar em consideração a recomendação do VScode.</em></p>
+    <video controls poster="thumb/estrelas-thumb.jpg"> <!--Lembre-se que a ordem é de cima para baixo-->
+        <source src="midia/ceu-video1.mp4" type="video/mp4">
+        <source src="midia/ceu-video.webm" type="video/webm"> <!--Coloquei só dois tipos, mas dá pra por mais-->
+    </video>
+    <p><strong>Lembre-se das tags controls(para tocar o vídeo), width(muda o tamanho do vídeo) e poster(para as thumbs).</strong> <br>É possível usar o CSS para mudar o tamanho do vídeo também. <br><em>Lembre-se que colocar vídeos de maneira local pode comprometer o preço da sua hospedagem</em>.</p>
+    <h2>Vídeos em outros servidores</h2>
+    <h3>Vídeos no youtube</h3>
+    <p>Basta utilizar as próprias configurações de serviço, na parte de <em>compartilhar</em> e na parte de <em>incorporar</em>, veja:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=Iweo2C9wlmtX9WB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Só vai dar para implementar se o usuário deixar na hora do upload do vídeo-->
+    <h3>Vídeos no vímeo</h3>
+    <p>Mesma parada de incorporar</p>
+    <iframe autoplay src="https://player.vimeo.com/video/899076296?h=8f382512fe&color=ff0179" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/899076296">Genji FanArt</a> from <a href="https://vimeo.com/krimzky">Serhii Krystiev</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagem flexível</title>
+    <style>
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(32, 31, 31);">
+    <h1 style="text-align: center; color: white;">Imagem de boa qualidade</h1>
+    <p>Modifique o tamanho da janela do seu navegador, <strong>para uma melhor experiência</strong> &#x1F60A;.</p>
+    <picture>
+        <source media="(max-width: 790px)" srcset="images/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="images/paisagem-m.png" type="image/png">
+        <img src="images/paisagem-g.png" alt="Mulher em um morro">
+    </picture>
+    <p>Lembrando que essa qualidade de imagem <em>NÃO</em> é recomendada.</p>
+</body>
+</html>

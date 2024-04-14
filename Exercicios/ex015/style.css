@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* As regras funcionam com aspas e ponto e vírgula */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(255, 239, 97);
+    text-align: justify;
+    font-size: 20px;
+}
+h1 {
+    color: maroon;
+    background-color: gold;
+    font-size: 1.5em;
+}
+h2 {
+    color: darkred;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: coral;
+}

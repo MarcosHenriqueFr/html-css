@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Estudos das Listas</h1>
+    <h2>Listas ordenadas/Ordered Lists</h2>
+    <p>As tags possiveis com listas são fora da tag &lt;p&gt;, e a tag em questão é a &lt;ol&gt;</p>
+    <ol type="i"> <!-- É preciso entender que o parâmetro start="" é numérico-->
+        <li>Tomar o café da manhã</li>
+        <li>Ir pra academia</li>
+        <li>Beber água</li>
+        <li>Al mossar</li>
+        <li>Regar as plantas</li>
+    </ol>
+    <p>Você ainda pode colocar dois parâmetros na mesma tag, <br><strong>O parâmetro type="", e o parâmetro start=""</strong> <br>Onde o segundo, mostra de qual item vai começar a lista</p>
+    <h2>Listas Desordenadas/Unordered lists</h2>
+    <p>A tag em questão é a &lt;ul&gt;, onde é possivel colocar os mesmos parâmetros <br>Sendo os tipos: <em>Square, circle e disc</em></p>
+    <ul type="square">
+        <li>Baixe o setup do app</li>
+        <li>Instale o jogo</li>
+        <li>Abra e atualize os drivers</li>
+        <li>Abra e configure o jogo à sua disposição</li>
+        <li>Se divirta!! :D &#x2323; &#x1F60A;</li>
+    </ul>
+    <h2>Podemos também fazer listas mistas</h2>
+    <p>As listas mistas são mais simples do que parecem, é simplesmente colocar uma nova ol ou ul dentro de um li, <br>Observe a seguir:</p>
+    <h3>Meus jogos favoritos</h3>
+    <ul type="square">
+        <li>Red Dead Redemption</li>
+        <ol type="a">
+            <li>Read Dead I</li>
+            <strong>
+                <li>Red Dead II</li>
+            </strong>
+        </ol>
+        <li>Gta</li>
+        <ol type="a">
+            <strong>
+                <li>Gta 5</li>
+            </strong>
+            <li>Gta 4</li>
+            <li>Gta San Andreas</li>
+            <li>Gta Vice City</li>
+        </ol>
+        <li>Final Fantasy</li>
+        <ol type="a">
+            <li>Final Fantasy 7</li>
+            <strong>
+                <li>Final Fantasy 12</li>
+            </strong>
+        </ol>
+        <li>Mario</li>
+        <ol type="a">
+            <li>Mario 64</li> <!-- Nesse lugar aqui, eu usei o ALT, para utilizar diversos cursores-->
+            <li>Mario Bros</li>
+            <ul>
+                <li>Mario Bros. 4</li>
+            </ul>
+            <li>Mario Kart</li>
+            <strong>
+                <li>Mario World</li>
+            </strong>
+                <ul>
+                    <li>Super Mario World</li>
+                </ul>
+        </ol>
+    </ul>
+    <p>Perceba que você pode colocar as listas uma dentro da outra, <em>sendo ela, ol ou ul</em>, <br>Com quantos níveis preferir, lembrando que HTML5 é uma linguagem semântica</p>
+    <h2>Listas de definição/Definition Lists</h2>
+    <p>Listas de definição funcionam com três tags: <br>
+        <ul>
+            <li>&lt;dl&gt; (definition list)</li>
+            <li>&lt;dt&gt; (definition term)</li>
+            <li>&lt;dd&gt; (definition description)</li>
+        </ul>
+        <br> Observe a seguir:
+    </p>
+    <dl>
+        <dt>HTML5</dt>
+        <dd>Linguagem de marcação de hipertexto, usada com característica semântica</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo com cascata</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação client/server-side</dd>
+    </dl> <!-- Lembrando que as mudanças estéticas são feitas na CSS -->
+    <p><strong><em>Lembrando que o google valoriza listas de definição em sua busca</em></strong></p>
+</body>
+</html>

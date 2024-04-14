@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Caixas</title>
+    <style>
+        h1 { /*Ocupa todo o espaço da tela do navegador*/
+            background-color: rgb(245, 203, 189);
+            border: 15px solid salmon;
+            text-align: center; /*Alinhar o texto, não a caixa*/
+            padding: 5px;
+            margin: 20px auto; /*O AUTO É INÚTIL SEM O HEIGHT E WIDTH*/
+            width: 200px;
+            height: 150px;
+            display: block;/*O h1 já é um display block*/
+            outline: 3px dotted black;
+        }
+        p {/*Também é um box-level, ESTAMOS MODIFICANDO TODOS OS P'S*/
+            background-color: lightgrey;
+            text-align: center;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        a {/*Inline-level, porém posso configurar ele, ele não tem width e height, pois está em uma só linha*/
+            background-color: rgb(113, 212, 207);
+            border: 2px dashed black;
+            padding: 5px;
+            display: inline;/*ele já é um display inline*/
+            margin: 20px 15px;/*espaçamento entre os elementos do texto*/
+            outline: 3px solid green;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Eu sou um Box-level</h1>
+    <p>Todo elemento html é uma caixa <a href="#">Eu sou inline-level</a> como você pôde ver aqui &#x1F913;</p>
+</body>
+</html>

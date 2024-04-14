@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+    <style>
+        body{
+            background-color: rgb(240, 184, 166);
+        }
+        h1{
+            color: rgb(129, 26, 26);
+        }
+        h2{
+            color: rgb(80, 15, 15);
+        }
+        h3{
+            font-size: 30px;
+            color: black;
+            -webkit-text-fill-color: aliceblue;
+            -webkit-text-stroke-width: 0.5px;
+            /* Isso aqui é uma maneira de colocar um contorno, só que é bem ineficiente */
+        }
+        hr{
+            color: black;
+            size: 2px; 
+            /* Esse código não funciona, já que parece que não é necessariamente algo palpável */
+        }
+    </style>
+</head>
+<body>
+    <h1>Algumas outras formatações</h1> 
+    <hr>
+    <h2>Código-fonte e Pré formatação</h2>
+    <p>Existem algumas tags para conseguirmos representar códigos de forma mais verídica <br>Essas tags são muito úteis na hora de apresenta-los: <br>São a tag <strong>&lt;code&gt;</strong> e tag <strong>&lt;pre&gt;</strong>, onde a primeira vai igualar o tamanho das letras e a segunda vai demonstrar a tabulação, observe:</p>
+    <p>Veja o que ocorre se representarmos sem usar as tags: <br><ins>
+        num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+        
+            soma = num1 + num2
+            subtracao = num1 - num2
+            multiplicacao = num1 * num2
+            divisao = num1 / num2
+    </ins> <br>Além de não organizar, vai ficar em uma fonte de difícil compreensão</p>
+        <p>Agora observe com a tag &lt;code&gt;: <br><code>num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+            
+            soma = num1 + num2
+            subtracao = num1 - num2
+            multiplicacao = num1 * num2
+            divisao = num1 / num2</code><br>Ocorre a mudança para uma fonte mais fácil, porém sem organizar</p>
+            <p>Para organizar, o que faz mais sentido é usar a tag &lt;pre&gt;, onde ela vai pegar a tabulação(espaçamentos) da página: <br>  
+                <pre>
+                    <code>
+                num1 = float(input("Digite o primeiro número: "))
+                num2 = float(input("Digite o segundo número: "))
+                
+                soma = num1 + num2
+                subtracao = num1 - num2
+                multiplicacao = num1 * num2
+                divisao = num1 / num2
+                    </code>
+                </pre>
+            </p>
+                <h3>O que é tabulação e quais são os atalhos?</h3>
+                <p>A tabulação é o espaçamento feito pelo próprio programa <br>Existem alguns atalhos para <strong>agilizar o trabalho</strong>, sendo eles: <br><em>Shift + Tab</em> - para mover para a esquerda <br><em>Tab</em> - para mover o código para a direita</p>
+    <h2>Agora, vamos ver um pouco mais sobre: CITAÇÕES</h2>
+    <p>Existem as simples e as completas, com as tags: <br><strong>Simples &lt;q&gt;:</strong> Observe o que ele me disse: <q>EU TE ODEIO.</q> <br> <strong>Completas &lt;Blockquote cite = "URL da fonte"&gt;:</strong> Já disse Albert Einstein: <blockquote cite="https://revistagalileu.globo.com/Ciencia/noticia/2016/06/13-frases-inspiradoras-de-grandes-cientistas.html#:~:text=Albert%20Einstein%3A%20%E2%80%9CFa%C3%A7a%20as%20coisas,com%20que%20se%20sintam%20humildes.%E2%80%9D">
+        Faça as coisas o mais simples que você puder, porém não se restrinja às mais simples.
+    </blockquote> <br>Essas tags agregam significado ao texto, então é melhor do que simplesmente escrever as aspas
+    </p>
+    <h2>Abreviações/Inversões</h2>
+    <p>
+            Quando escrevemos siglas/abreviações, <em>existe a tag &lt;abbr&gt;</em>, para que coloquemos um <abbr title="avisos">pop-up</abbr> explicando o que é aquilo. <!-- é sempre possível arrumar na formatação da CSS depois, e tambéem não é um link -->
+            <p>Também é possível inverter um texto dependendo da sua direção, usando a tag <strong>&lt;bdo: <ins>direction</ins>&gt;</strong>, como o exemplo a seguir: <br><em><bdo dir="rtl">Eu estava andando sozinho.</bdo></em> - Esse texto estava da direita p/esquerda</p>
+    </p>
+</body>
+</html>

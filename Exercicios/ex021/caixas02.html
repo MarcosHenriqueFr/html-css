@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Site de Exemplo</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #1b1b1b 40%, #979797);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: lightgray;
+            border-radius: 20px;
+            padding: 20px;
+            width: 600px;
+            margin: 10px auto;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu li {
+            list-style: none;
+            display: inline-block;
+            padding: 3px;
+            background-color: #585858;
+            margin: 2px 0;
+            border-radius: 20%;
+            box-shadow: 4px 10px 4px #00000070;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .menu li:hover {
+            transform: scale(1.1);
+            background-color: #353535;
+        }
+
+        .cabecalho #logo h1 {
+            background-color: #585858;
+            border: 2px solid black;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            margin: auto;
+            padding: 5px 0;
+            transition: 0.2s;
+        }
+
+        .cabecalho #logo h1:hover {
+            background-color: #353535;
+
+        }
+
+        .cabecalho #logo a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .jogos {
+            background-color: white;
+            width: 1000px;
+            padding: 20px;
+            margin: 0 auto 20px;
+            box-shadow: 5px 5px 1px black;
+        }
+        .noticias {
+            background-color: white;
+            width: 1000px;
+            padding: 20px;
+            margin: 0 auto 20px;
+            box-shadow: 5px 5px 1px black;
+        }
+        .conteudo-videos {
+            background-color: white;
+            width: 1000px;
+            padding: 20px;
+            margin: 0 auto 20px;
+            box-shadow: 5px 5px 1px black;/*direita, baixo, espalha, cor*/
+        }
+        .container-conteudo {
+            background-color: #acacac;
+            padding: 5px;
+        }
+        .titulo h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+        }
+        .titulo h2:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        article h3 {
+            margin: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            max-width: 100%;
+            padding: 8px;
+            margin: 30px 0;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        footer p {
+            text-align: center;
+            margin: 0;
+        }
+        .conteudo-videos .video {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <section id="logo">
+            <a href="#logo">
+                <h1>MH</h1>
+            </a>
+        </section>
+        <section>
+            <nav class="menu">
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Links</a></li>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="jogos">
+            <section class="titulo">
+                <h2>Informações de Jogos</h2>
+            </section>
+            <section class="container-conteudo">
+                <article>
+                    <h3>Read Dead Redemption 2</h3>
+                    <h4>Como jogar o jogo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio, assumenda
+                        laboriosam quibusdam, magnam aliquam ipsam iure, eum consectetur esse laudantium modi
+                        nobis porro! Ut, nisi. Quidem dolores modi perspiciatis!</p>
+                </article>
+            </section>
+        </section>
+        <section class="noticias">
+            <section class="titulo">
+                <h2>Novidades dos Games</h2>
+            </section>
+            <section class="container-conteudo">
+                <article>
+                    <h3>Novo vazamento de GTA 6</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis architecto
+                        distinctio beatae quis officia nam neque suscipit eius molestias, animi corporis ipsa
+                        maxime obcaecati voluptatibus libero tempore incidunt dolore.</p>
+                </article>
+            </section>
+        </section>
+        <section class="conteudo-videos">
+            <section class="titulo">
+                <h2>Veja nossos vídeos</h2>
+            </section>
+
+            <section>
+                <p>Exemplo de vídeo: </p>
+                <div class="video container-conteudo">
+                    <p>Video</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por MarcosHenriqueFr</p>
+    </footer>
+</body>
+
+</html>

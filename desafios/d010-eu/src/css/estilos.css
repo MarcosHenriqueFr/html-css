@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fontes/Bebas.otf') format('opentype'), url('../fontes/Bebas.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C2E1C8;
+    font-size: 0.9em;
+}
+
+p {
+    text-indent: 30px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+header {
+    background: linear-gradient(to top, #1D502A, #69ff8f);
+    height: 180px;
+    position: relative;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.432);
+}
+
+.info-site>h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+.info-site {
+    color: white;
+    text-align: center;
+}
+
+.info-site p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.menu>nav {
+    position: absolute;
+    /*Use a position entre pais e filhos para funcionar*/
+    bottom: 0;
+}
+
+.menu nav ul {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin: 8px;
+
+}
+
+.menu>nav>ul>li {
+    padding: 10px;
+}
+
+.menu>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu>nav>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: -5px 6px 10px rgba(0, 0, 0, 0.301);
+}
+
+main h2 {
+    padding: 2px 5px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.historia h2 {
+    background: linear-gradient(to right, #b9ffca71, white);
+    margin-left: 20px;
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+.titulo {
+    font-family: 'Android', sans-serif;
+    color: darkgreen
+}
+
+.historia {
+    padding: 15px;
+}
+
+.historia p {
+    padding: 15px 30px 0;
+}
+
+.foto-robo {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.foto-ilustradora {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.foto-mascote {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.video {
+    background-color: #29723B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 10px;
+}
+
+.extra {
+    padding: 15px;
+}
+
+.extra>p {
+    padding: 20px;
+}
+
+.extra .aprenda-mais {
+    background-color: #29723B;
+    border-radius: 20px;
+}
+
+.extra .aprenda-mais>h2 {
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+}
+
+.extra .aprenda-mais .container-conteudo {
+    background-color: #c0dfc8;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.extra .aprenda-mais .container-conteudo .listas {
+    display: flex;
+    gap: 200px;
+    padding: 20px 0 20px 140px;
+}
+
+.links {
+    text-decoration: none;
+    color: #29723B;
+    font-weight: bold;
+}
+
+.links::after {
+    content: '  \01F517';
+    /*Só substituir o U por um 0, código em css*/
+}
+
+.links:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.listas li::before {
+    content: '\02714  ';
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+footer>p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
