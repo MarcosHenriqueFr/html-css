@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens de fundo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            background-image: url('imagens/wallpaper004.jpg');
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.quadrado {
+            background-color: rgb(158, 158, 158);
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            border: 3px solid black;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: -7px 13px 10px 0px rgba(0, 0, 0, 0.158);
+            transition: 0.5s;
+        }
+        .quadrado:hover {
+            width: 600px;
+            transform: scale(0.9);
+        }
+        div.quadrado h1 {
+            background-color: teal;
+            color: white;
+            width: 200px;
+            margin: auto;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.288);
+            border: 1px solid white;
+        }
+        div#q1 {
+            background-color: aqua;
+        }
+        div#q2 {
+            background: linear-gradient(45deg, blue, yellow);/*Ambas as informações são juntas nos graus*/
+        }
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1"><h1>A</h1></div>
+    <div class="quadrado" id="q2"><h1>A</h1></div>
+    <div class="quadrado" id="q3"><h1>A</h1></div>
 </body>
 </html>
