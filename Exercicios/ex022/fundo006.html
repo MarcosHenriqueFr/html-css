@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Site</title>
+    <title>Fundo fixo</title>
     <style>
         body {
             height: 100vh;/*O conteúdo do body é achatado*/
+            
             background-color: black;/*Ideal que tenha para conexões lentas*/
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: repeat-y;/*A imagem pode repetir com o tamanho do conteúdo*/
             /* background-size: 100% 100%, muda as duas proporções, porém distorçe a imagem */
-            background-size: cover;
+            background-size: cover;/*Cobre o fundo cortando a imagem*/
+            background-attachment: fixed;/*Só rola o conteúdo*/
+
+            /* background: black url('imagens/wallpaper002.jpg') center top no-repeat cover fixed; O size não funciona no shorthand */
         }
 
         main {
             background-color: white;
-            width: 650px;
+            max-width: 650px;
             padding: 20px;
             margin: auto;
             border: 3px solid rgb(28, 28, 109);
