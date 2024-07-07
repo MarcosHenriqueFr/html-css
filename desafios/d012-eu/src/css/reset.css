@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font: normal normal 1em Arial;
+}
+h1 {
+    font: normal normal 2em Arial, Helvetica, sans-serif;/*Style, weight*/
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+

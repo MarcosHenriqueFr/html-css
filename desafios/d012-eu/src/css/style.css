@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte-titulo: "Passion One", cursive;
+    --fonte-padrao: 'Sriracha', Arial;
+    --fonte-info: Verdana, Tahoma, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font: normal bold 6em var(--fonte-titulo);
+    font-variant: small-caps;/*Muda a estruturação da fonte*/
+    font-size: 10vw;
+}
+
+header h1:hover {
+    text-decoration: underline;
+}
+
+header p {
+    margin-top: 10px;
+    font: normal normal 1em var(--fonte-info);
+    font-size: 0.8em;
+}
+
+article {
+    padding: 8vh 30px;
+    line-height: 2em;
+    font-size: 3.2vw;
+}
+
+article p {
+    font: normal normal 1em var(--fonte-padrao);
+    padding: 5px;
+    width: 50%;
+}
+article.normal p {
+    padding-bottom: 8vh;
+}
+
+article.parallax {
+    background-attachment: fixed;
+    box-shadow: inset 4px 4px 17px 0px rgba(0, 0, 0, 0.712);
+}
+
+article.parallax p {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: white;
+}
+
+article#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+
+article#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    font: normal normal 0.8em var(--fonte-info);
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
