@@ -27,7 +27,7 @@ header h1:hover {
 header p {
     margin-top: 10px;
     font: normal normal 1em var(--fonte-info);
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 article {
