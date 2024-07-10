@@ -16,6 +16,7 @@
 html, body { /*html e body*/
     min-height: 100vh;/*Sempre ocupa 100%*/
     background-color: darkgray;
+    font-family: var(--fonte-info);
 }
 
 header {
@@ -24,11 +25,14 @@ header {
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     padding-top: 50px;
     /* text-transform: uppercase; */
     font-variant: small-caps;/*Primeiras letras maiores*/
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;/*10% da largura da tela, já que não tem media querie*/
 }
+
 header p {
     padding-bottom: 50px;
 }
@@ -48,6 +52,8 @@ section {
     padding-bottom: 10vh;/*10% da view height*/
     line-height: 2em;/*32 px*/
     padding-left: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -61,7 +67,8 @@ section.imagem {
 }
 
 section.imagem p {
-    width: 400px;
+    display: inline-block;/*Mudou para uma caixa que se adapta para o conteúdo dela*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.459);
 }
 
