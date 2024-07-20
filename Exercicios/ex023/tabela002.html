@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
             width: 500px;
             font-size: 1em;
             border-collapse: collapse;
+            position: relative;/*para rolagem do cabeçalho*/
+        }
+
+        thead > tr > th { /*Rolagem fica até o final da tabela*/
+            position: sticky;
+            background-color: rgb(26, 26, 26);
+            top: -1px;/*Cola na parte 0 - 1px*/
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: rgb(173, 173, 173);
+            padding: 5px;
         }
 
         td, th {
@@ -16,9 +34,19 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(2n) {
+            /* A cada duas linhas ele pula de um em um, os valores odd e even, impar e par, necessário caso o fundo seja além de branco */
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(26, 26, 26);
             color: white;
+        }
+
+        th#pop{
+            /* Sempre em relação ao total da tabela */
+            width: 25%;
         }
 
         .num {
@@ -29,10 +57,11 @@
 <body>
     <h1>Tabela Informativa</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th><!--th de escopo de coluna-->
+                <th scope="col" id="pop">População</th><!--Info abaixo-->
             </tr>
         </thead>
         <tbody>
@@ -147,7 +176,7 @@
         </tbody>
         <tfoot><!--Tem semântica então ele organiza as posições de maneira correta-->
             <tr>
-                <th>População Total</th>
+                <th scope="row">População Total</th><!--Info ao lado, não causa resultado visual-->
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
